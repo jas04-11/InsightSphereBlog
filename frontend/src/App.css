@@ -1,0 +1,148 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0 0 0 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navlink{
+  color: #fff;
+  background-color: #0317f9;
+
+}
+.navItem{
+  color: #fff;
+}
+.main{
+  font-family: cursive;
+}
+.navItem::after{
+  position: absolute;
+  content: "";
+  width: 0%;
+  transition:  ease-in .1s;
+  left: 0;
+  bottom: -2px;
+  right: 0;
+  height: 2px;
+  background-color: #fff;
+}
+.navItem:hover::after{
+  width: 100%;
+  color: #fff;
+}
+.navItem.active::after{
+  width: 100%;
+}
+
+.sp-text{
+  color:#0317f9 ;
+
+}
+.btnNormal{
+  padding: 10px;
+  min-width: 130px;
+  background-color:#0317f9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in .3s;
+}
+
+.btnNormal:hover{
+  background-color:#f4f4f4;
+  color: #0317f9;
+  border: solid 1px #0317f9;
+
+}
+
+
+.btnWhite{
+  padding: 10px;
+  min-width: 130px;
+  background-color: #f4f4f4;
+  color: #0317f9;
+  border: solid 1px #0317f9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in .3s;
+
+}
+
+.btnWhite:hover{
+  background-color:#0317f9;
+  color: #f4f4f4;
+}
+
+
+.blogsCon{
+  margin: 30px 0 30px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.blogsCon .blog{
+  width: 300px;
+  padding: 10px;
+  height: 300px;
+  cursor: pointer;
+  transition: ease-in .3s;
+  background-color: #161616;
+  border-radius: 10px;
+}
+.blogsCon .blog:hover{
+ transform: translateY(-3%);
+}
+.latest{
+  padding: 25px;
+  font-size: 40px;
+}
+.footer{
+  text-align: center;
+  margin-top: 20px;
+}
+.footer1{
+  padding: 10px;
+  margin-top: 20px;
+
+}
+.signin{
+  max-width: 500px;
+
+}
+.floating-input{
+  margin: 30px 0 0 0;  
+}
+/* Light mode is default - no extra styles */
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode nav.navbar {
+  background-color: #222;
+}
+
+.dark-mode a.nav-link,
+.dark-mode .navItem {
+  color: white !important;
+}
+
+.dark-mode .btn-outline-secondary {
+  color: white;
+  border-color: white;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
